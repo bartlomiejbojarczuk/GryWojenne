@@ -16,6 +16,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    battlewindow.ui \
     mainwindow.ui
 
 # Default rules for deployment.
