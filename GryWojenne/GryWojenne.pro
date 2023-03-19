@@ -14,6 +14,7 @@ SOURCES += \
     cbron.cpp \
     cjednostka.cpp \
     cpocisk.cpp \
+    cprzeszkoda.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -23,6 +24,7 @@ HEADERS += \
     cbron.h \
     cjednostka.h \
     cpocisk.h \
+    cprzeszkoda.h \
     mainwindow.h
 
 FORMS += \
