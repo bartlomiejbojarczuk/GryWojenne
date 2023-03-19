@@ -13,8 +13,11 @@ SOURCES += \
     cbron.cpp \
     cbron.cpp \
     cjednostka.cpp \
+    cmiasto.cpp \
+    cpiechota.cpp \
     cpocisk.cpp \
     cprzeszkoda.cpp \
+    cteren.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -23,8 +26,11 @@ HEADERS += \
     cbron.h \
     cbron.h \
     cjednostka.h \
+    cmiasto.h \
+    cpiechota.h \
     cpocisk.h \
     cprzeszkoda.h \
+    cteren.h \
     mainwindow.h
 
 FORMS += \
