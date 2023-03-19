@@ -13,3 +13,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_wyjscie_clicked()
+{
+    exit (1);
+}
+
+

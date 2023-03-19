@@ -10,11 +10,19 @@ CONFIG += c++11
 
 SOURCES += \
     battlewindow.cpp \
+    cbron.cpp \
+    cbron.cpp \
+    cjednostka.cpp \
+    cpocisk.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     battlewindow.h \
+    cbron.h \
+    cbron.h \
+    cjednostka.h \
+    cpocisk.h \
     mainwindow.h
 
 FORMS += \
