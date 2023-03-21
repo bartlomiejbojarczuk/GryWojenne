@@ -16,6 +16,7 @@ SOURCES += \
     cmiasto.cpp \
     cpiechota.cpp \
     cpocisk.cpp \
+    cpotyczka.cpp \
     cprzeszkoda.cpp \
     cteren.cpp \
     main.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     cmiasto.h \
     cpiechota.h \
     cpocisk.h \
+    cpotyczka.h \
     cprzeszkoda.h \
     cteren.h \
     mainwindow.h

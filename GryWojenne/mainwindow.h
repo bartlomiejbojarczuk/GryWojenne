@@ -5,6 +5,8 @@
 #include <QMessageBox>
 #include <QString>
 
+#include "cpotyczka.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE

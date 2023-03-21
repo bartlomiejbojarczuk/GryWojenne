@@ -12,3 +12,9 @@ battlewindow::~battlewindow()
 {
     delete ui;
 }
+
+void battlewindow::on_pushButton_clicked()
+{
+    exit (1);
+}
+

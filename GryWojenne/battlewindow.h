@@ -15,6 +15,9 @@ public:
     explicit battlewindow(QWidget *parent = nullptr);
     ~battlewindow();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::battlewindow *ui;
 };

@@ -26,12 +26,13 @@ void MainWindow::on_wyjscie_clicked()
 }
 
 
-
 void MainWindow::on_Rozpocznij_potyczke_clicked()
 {
     if(sprawdz()){
     qDebug()<<"Przycisk Rozpocznij";
     //rozpoczecie potyczki
+    CPotyczka *potyczka=new CPotyczka;
+
 }
 }
 
@@ -138,6 +139,9 @@ void MainWindow::on_kasuj_oddzialy_clicked()
     dodane_jednostki_NATO.clear();
     jednostki_ISIS_String="";
     jednostki_NATO_String="";
+    ile_jednostek_ISIS=0;
+    ile_jednostek_NATO=0;
+
 }
 
 
