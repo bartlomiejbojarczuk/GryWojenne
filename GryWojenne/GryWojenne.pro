@@ -10,8 +10,10 @@ CONFIG += c++11
 
 SOURCES += \
     battlewindow.cpp \
+    cartyleria.cpp \
     cbron.cpp \
     cbron.cpp \
+    cczolg.cpp \
     cjednostka.cpp \
     cmiasto.cpp \
     cpiechota.cpp \
@@ -24,8 +26,10 @@ SOURCES += \
 
 HEADERS += \
     battlewindow.h \
+    cartyleria.h \
     cbron.h \
     cbron.h \
+    cczolg.h \
     cjednostka.h \
     cmiasto.h \
     cpiechota.h \

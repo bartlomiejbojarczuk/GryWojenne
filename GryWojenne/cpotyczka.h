@@ -10,6 +10,9 @@
 #include "cteren.h"
 #include "cprzeszkoda.h"
 #include "battlewindow.h"
+#include "cpiechota.h"
+#include "cczolg.h"
+#include "cartyleria.h"
 
 class CPotyczka
 {
