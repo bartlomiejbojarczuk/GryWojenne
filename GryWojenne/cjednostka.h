@@ -2,6 +2,9 @@
 #define CJEDNOSTKA_H
 
 #include <QString>
+#include <QDebug>
+
+#include "cprzeszkoda.h"
 
 class CJednostka
 {
@@ -32,7 +35,7 @@ public:
 
     void setWrogowie(std::vector<CJednostka*> jednostki);
     void setSwoi(std::vector<CJednostka*> jednostki);
-    //void setPrzeszkody(std::vector<CPrzeszkoda*> przeszkody);
+    void setPrzeszkody(std::vector<CPrzeszkoda*> przeszkody);
 
     void setJednostkadoAtaku();
 
@@ -77,6 +80,7 @@ protected:
     std::vector<CJednostka*> wrogowie;
     std::vector<CJednostka*> swoi;
     std::vector<CJednostka*> w_zasiegu;
+    std::vector<CPrzeszkoda*> przeszkody;
 
 
 

@@ -5,9 +5,14 @@
 #include <QGraphicsScene>
 #include <QDebug>
 # include <windows.h>
+#include <QWidget>
+#include <QGraphicsPixmapItem>
 
 #include "cjednostka.h"
 #include "cprzeszkoda.h"
+#include "cczolg.h"
+#include "cpiechota.h"
+#include "cartyleria.h"
 
 namespace Ui {
 class battlewindow;
@@ -39,7 +44,7 @@ private:
     void rysuj_jednostki(std::vector<CJednostka *> jednostki_do_narysowania, QString frakcja);
     void rysuj_plansze ();
     void rysuj_flagi ();
-    void rysuj_przeszkody(std::vector<CPrzeszkoda*> przeszkody_do_narysowania);
+    void rysuj_przeszkody(std::vector<CPrzeszkoda*> przeszkody_do_narysowania){};
     void usun_jednostke (QGraphicsPixmapItem *item);
     std::vector<CJednostka*> jednostki_rys_ISIS;
     std::vector<CJednostka*> jednostki_rys_NATO;
