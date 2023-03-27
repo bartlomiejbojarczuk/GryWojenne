@@ -12,7 +12,6 @@ battlewindow::battlewindow(QWidget *parent) :
     scene->setSceneRect(0,0,500,500);
     rysuj_plansze();
     rysuj_flagi();
-    on_now();
 qDebug()<<"BattleWindow konstruktor";
 }
 
@@ -115,3 +114,23 @@ if(jednostki_do_narysowania.size()){
     }
 
     }}
+
+//Metoda pozwalająca na rysowanie przeszkód wynikających z terenu
+void battlewindow::rysuj_przeszkody(std::vector<CPrzeszkoda*> przeszkody_do_narysowania)
+{
+
+
+    for(int i=0; i<przeszkody_do_narysowania.size();i++)
+{
+        if(przeszkody_do_narysowania.size()){
+           QString subpath=przeszkody_do_narysowania[i]->getNazwa();
+           QString path="C:\\Users\\bbojarczuk\\ZCUZ\\GryWojenne\\GryWojenne\\graphics\\"+subpath;
+           QImage Image(path);
+           QGraphicsPixmapItem *item=new QGraphicsPixmapItem(QPixmap::fromImage(Image));
+           item->setScale(0.2);
+           item->setPos(przeszkody_do_narysowania[i]->getPosx(),przeszkody_do_narysowania[i]->getPosy());
+           scene->addItem(item);
+
+}
+    }
+}

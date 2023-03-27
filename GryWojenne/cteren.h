@@ -14,6 +14,7 @@ public:
     CTeren();
     int getTrudnosc();
     std::vector<CPrzeszkoda *> getPrzeszkody();
+    virtual void przeszkodz(double wylosowane){};
 protected:
     std::vector<CPrzeszkoda*> przeszkody;
     int trudnosc;

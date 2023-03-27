@@ -5,7 +5,9 @@
 #include <vector>
 #include <QString>
 #include <QDebug>
+#include <QObject>
 
+#include "ctimer.h"
 #include "cjednostka.h"
 #include "cteren.h"
 #include "cprzeszkoda.h"
@@ -13,9 +15,12 @@
 #include "cpiechota.h"
 #include "cczolg.h"
 #include "cartyleria.h"
+#include "cczynnik_losowy.h"
 
-class CPotyczka
+class CPotyczka: public QObject
 {
+    Q_OBJECT
+
 public:
     CPotyczka();
     ~CPotyczka();
@@ -29,10 +34,14 @@ public:
 
 protected:
     battlewindow* okno_potyczki;
+    CCzynnik_losowy* czynnik_losowy;
+
 
 
 private:
     void result();
+    int licznik;
+    CTimer* timer;
     std::vector<CJednostka*> jednostki_NATO;
     std::vector<CJednostka*> jednostki_ISIS;
     void rozmiesc_jednostki(std::vector<CJednostka*> jednostki_do_rozmieszczenia, QString frakcja);
@@ -43,6 +52,9 @@ private:
     void update_window();
     void update_jednostki_ISIS(CJednostka *jednostka);
     void update_jednostki_NATO (CJednostka *jednostka);
+
+private slots:
+    void update ();
 };
 
 #endif // CPOTYCZKA_H

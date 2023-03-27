@@ -14,6 +14,7 @@ SOURCES += \
     cbron.cpp \
     cbron.cpp \
     cczolg.cpp \
+    cczynnik_losowy.cpp \
     cjednostka.cpp \
     cmiasto.cpp \
     cpiechota.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
     cpotyczka.cpp \
     cprzeszkoda.cpp \
     cteren.cpp \
+    ctimer.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -30,6 +32,7 @@ HEADERS += \
     cbron.h \
     cbron.h \
     cczolg.h \
+    cczynnik_losowy.h \
     cjednostka.h \
     cmiasto.h \
     cpiechota.h \
@@ -37,6 +40,7 @@ HEADERS += \
     cpotyczka.h \
     cprzeszkoda.h \
     cteren.h \
+    ctimer.h \
     mainwindow.h
 
 FORMS += \
