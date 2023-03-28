@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QString>
+#include "cpustynia.h"
+#include "cmiasto.h"
 
 #include "cpotyczka.h"
 
@@ -41,6 +43,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     int randomize(int low, int high);
+    CTeren* daj_teren();
 
 };
 #endif // MAINWINDOW_H

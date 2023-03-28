@@ -30,12 +30,25 @@ void MainWindow::on_Rozpocznij_potyczke_clicked()
 {
     if(sprawdz()){
     qDebug()<<"Przycisk Rozpocznij";
-    //rozpoczecie potyczki
     CPotyczka *potyczka=new CPotyczka;
+    potyczka->tworz_oddzial(dodane_jednostki_ISIS,"ISIS");
+    qDebug()<<"Stworzono oddzial ISIS: "<<jednostki_ISIS_String;
+    potyczka->tworz_oddzial(dodane_jednostki_NATO,"NATO");
+    qDebug()<<"Stworzono oddzial NATAO: "<<jednostki_NATO_String;
+    potyczka->teren_walk=daj_teren();
 
 }
 }
 
+CTeren* MainWindow::daj_teren(){
+        CTeren* Teren;
+        QString teren=ui->comboBox_3->currentText();
+        if(teren=="Pustynia")
+           Teren=new CPustynia;
+        if(teren=="Miasto")
+           Teren=new CMiasto;
+        return Teren;
+}
 
 void MainWindow::on_dodaj_jednostke_Button_clicked()
 {
@@ -166,3 +179,4 @@ bool MainWindow::sprawdz(){
     }
     return 1;
 }
+

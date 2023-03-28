@@ -11,7 +11,7 @@ CONFIG += c++11
 SOURCES += \
     battlewindow.cpp \
     cartyleria.cpp \
-    cbron.cpp \
+    cbomba.cpp \
     cbron.cpp \
     cczolg.cpp \
     cczynnik_losowy.cpp \
@@ -20,16 +20,20 @@ SOURCES += \
     cpiechota.cpp \
     cpocisk.cpp \
     cpotyczka.cpp \
+    cprzeciwlotniczy.cpp \
+    cprzeciwpancerny.cpp \
     cprzeszkoda.cpp \
+    cpustynia.cpp \
     cteren.cpp \
     ctimer.cpp \
+    czwykly.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     battlewindow.h \
     cartyleria.h \
-    cbron.h \
+    cbomba.h \
     cbron.h \
     cczolg.h \
     cczynnik_losowy.h \
@@ -38,9 +42,13 @@ HEADERS += \
     cpiechota.h \
     cpocisk.h \
     cpotyczka.h \
+    cprzeciwlotniczy.h \
+    cprzeciwpancerny.h \
     cprzeszkoda.h \
+    cpustynia.h \
     cteren.h \
     ctimer.h \
+    czwykly.h \
     mainwindow.h
 
 FORMS += \

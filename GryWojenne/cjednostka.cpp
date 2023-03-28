@@ -2,7 +2,7 @@
 
 CJednostka::CJednostka()
 {
-   //this->bron=new CBron;
+   this->bron=new CBron;
 }
 CJednostka::~CJednostka(){
 qDebug()<<"Destruktor jednostka!";
@@ -161,35 +161,35 @@ void CJednostka::umrzyj()
        this->death=true;
 }
 
-//int CJednostka::punkty_ataku()
-//{
-//   return bron->suma_obrazen+2*sila_ataku;
-//}
+int CJednostka::punkty_ataku()
+{
+   return bron->suma_obrazen+2*sila_ataku;
+}
 
-//int CJednostka::punkty_obrony()
-//{
-//   return pancerz+0.5*doswiadczenie*wytrzymalosc;
-//}
+int CJednostka::punkty_obrony()
+{
+   return pancerz+0.5*doswiadczenie*wytrzymalosc;
+}
 
 
 
-//void CJednostka::odejmij_zycie(int ile){
+void CJednostka::odejmij_zycie(int ile){
 
-//   this->zycie-=ile;
-//}
+   this->zycie-=ile;
+}
 
-//void CJednostka::strzal()
-//{   if(this){
-//   bron->strzel(this->nazwa,jednostka_do_ataku->nazwa);
-//       jednostka_do_ataku->odejmij_zycie(punkty_ataku());
+void CJednostka::strzal()
+{   if(this){
+   bron->strzel(this->nazwa,jednostka_do_ataku->nazwa);
+       jednostka_do_ataku->odejmij_zycie(punkty_ataku());
 
-//   jednostka_do_ataku->umrzyj();
-//   if(jednostka_do_ataku->death)
-//       jednostka_do_ataku=NULL;
-//   }
-//   else
-//       qDebug()<<"Strzal pusty this";
-//}
+   jednostka_do_ataku->umrzyj();
+   if(jednostka_do_ataku->death)
+       jednostka_do_ataku=NULL;
+   }
+   else
+       qDebug()<<"Strzal pusty this";
+}
 
 //sprawdzenie, czy jest przypisana jednostka do ataku
 bool CJednostka::mam_kogo_atakowac()

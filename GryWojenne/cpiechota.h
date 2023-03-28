@@ -1,22 +1,26 @@
 #ifndef CPIECHOTA_H
-#define CPIECHOTA_H
+
+#pragma once
 
 #include "cjednostka.h"
 
-class CPiechota : public CJednostka
+class CCzolg;
+class CArtyleria;
+
+class CPiechota  :public CJednostka
 {
 public:
     CPiechota ();
     CPiechota (QString strona_konfliktu);
     ~CPiechota();
-    void zdarzenie(double wylosowano){};
+    void zdarzenie(double wylosowano);
 
 private:
     int morale;
     bool panika;
-    //void atakuj ();
-    //int ruch();
-    //int losowy_ruch();
+    void atakuj ();
+    int ruch();
+    int losowy_ruch();
     void uciekaj();
     void jakie_morale();
     void choroba();
@@ -26,5 +30,7 @@ private:
     bool zdrowy;
 
 };
+
+
 
 #endif // CPIECHOTA_H

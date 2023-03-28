@@ -1,26 +1,28 @@
 #include "cpotyczka.h"
 
-/*!
- * \brief CPotyczka::CPotyczka - klasa odpowiedzialna za XXX
- */
-
 CPotyczka::CPotyczka()
 {
     this->czynnik_losowy=new CCzynnik_losowy;
     this->licznik=0;
-    this->okno_potyczki=new battlewindow;
-    okno_potyczki->show();
-    this->timer=new CTimer();
-    connect( timer, SIGNAL(now()),SLOT(update()) );
-    timer->start();
-    qDebug()<<"Potyczka created";
-}
 
+  this->okno_potyczki=new battlewindow;
+
+    this->timer=new CTimer();
+
+    connect( timer, SIGNAL(now()),SLOT(update()) );
+    okno_potyczki->show();
+    timer->start();
+qDebug()<<"Potyczka konstruktor";
+
+}
 
 CPotyczka::~CPotyczka()
 {
     timer->Stop();
 }
+
+
+
 std::vector<CJednostka *> CPotyczka::getJednostki_ISIS() const{
 
     return jednostki_ISIS;
@@ -30,37 +32,7 @@ std::vector<CJednostka *> CPotyczka::getJednostki_NATO() const{
     return jednostki_NATO;
 }
 
-//metoda odpowiedzialna za rozmieszczenie jednostek - przypisanie im współrzędnych ich pozycji
-void CPotyczka::rozmiesc_jednostki(std::vector<CJednostka *> jednostki_do_rozmieszczenia,QString frakcja)
-{
-    int x1=0,y1=450,x2=0,y2=0;
-    for(int i=0; i<jednostki_do_rozmieszczenia.size();i++){
 
-    if(frakcja=="ISIS")
-           {
-            jednostki_do_rozmieszczenia[i]->setPozycjaX(x2);
-            jednostki_do_rozmieszczenia[i]->setPozycjaY(y2);
-               x2=x2+75;
-               if(x2>=500)
-               {   x2=0;
-                   y2=y2+75;}
-           }
-           else
-           {
-            jednostki_do_rozmieszczenia[i]->setPozycjaX(x1);
-            jednostki_do_rozmieszczenia[i]->setPozycjaY(y1);
-               x1=x1+75;
-               if(x1>=500)
-               {   x1=0;
-                   y1=y1-75;}
-
-           }
-    }
-
-    qDebug()<<"Rozmieszczam jednostki";
-}
-
-//metoda odpowiedzialna za utworzenie oddziałów na podstawie przekazanej listy jednostek
 void CPotyczka::tworz_oddzial(std::vector<QString> dodane_jednostki, QString frakcja){
 
     if(frakcja=="ISIS"){
@@ -76,7 +48,7 @@ void CPotyczka::tworz_oddzial(std::vector<QString> dodane_jednostki, QString fra
         }
        if(dodane_jednostki[k]=="Piechota")
         {
-        //jednostki_ISIS.push_back(new CPiechota(frakcja));
+        jednostki_ISIS.push_back(new CPiechota(frakcja));
         }
        if(dodane_jednostki[k]=="Czolg")
         {
@@ -96,7 +68,7 @@ void CPotyczka::tworz_oddzial(std::vector<QString> dodane_jednostki, QString fra
             }
            if(dodane_jednostki[k]=="Piechota")
             {
-            //jednostki_NATO.push_back(new CPiechota(frakcja));
+            jednostki_NATO.push_back(new CPiechota(frakcja));
             }
            if(dodane_jednostki[k]=="Czolg")
             {
@@ -106,15 +78,6 @@ void CPotyczka::tworz_oddzial(std::vector<QString> dodane_jednostki, QString fra
     rozmiesc_jednostki(jednostki_ISIS,"ISIS");
     rozmiesc_jednostki(jednostki_NATO,"NATO");
 
-}
-
-//metoda odświeżająca okno potyczki
-void CPotyczka::update_window()
-{
-    this->okno_potyczki->setJednostki_rys_ISIS(jednostki_ISIS);
-    this->okno_potyczki->setJednostki_rys_NATO(jednostki_NATO);
-    this->okno_potyczki->setPrzeszkody_rys(przeszkody_w_potyczce);
-    this->okno_potyczki->on_now();
 }
 
 void CPotyczka::update()
@@ -150,6 +113,7 @@ if(licznik>=40)
 update_window();
 }
 
+
 void CPotyczka::result()
 {
     tekst+="Koniec bitwy \n Zwycięża: ";
@@ -166,6 +130,35 @@ void CPotyczka::result()
             timer->Stop();
             okno_potyczki->tekst=tekst;
             update_window();
+}
+
+void CPotyczka::rozmiesc_jednostki(std::vector<CJednostka *> jednostki_do_rozmieszczenia,QString frakcja)
+{
+    int x1=0,y1=450,x2=0,y2=0;
+    for(int i=0; i<jednostki_do_rozmieszczenia.size();i++){
+
+    if(frakcja=="ISIS")
+           {
+            jednostki_do_rozmieszczenia[i]->setPozycjaX(x2);
+            jednostki_do_rozmieszczenia[i]->setPozycjaY(y2);
+               x2=x2+75;
+               if(x2>=500)
+               {   x2=0;
+                   y2=y2+75;}
+           }
+           else
+           {
+            jednostki_do_rozmieszczenia[i]->setPozycjaX(x1);
+            jednostki_do_rozmieszczenia[i]->setPozycjaY(y1);
+               x1=x1+75;
+               if(x1>=500)
+               {   x1=0;
+                   y1=y1-75;}
+
+           }
+    }
+
+    qDebug()<<"Rozmieszczam jednostki";
 }
 
 void CPotyczka::sprawdz_kto_polegl(std::vector<CJednostka *> &jednostki_do_przegladu)
@@ -189,6 +182,39 @@ for ( iterator = jednostki_do_przegladu.begin(); iterator != jednostki_do_przegl
 }
 }
 
+void CPotyczka::pech()
+{   qDebug()<<"Pech";
+    if(!finished)
+    {if(licznik%3==1)
+        {
+       if(licznik%2==0)
+        czynnik_losowy->losuj_czynnik_losowy(jednostki_ISIS,teren_walk);
+
+       else
+        czynnik_losowy->losuj_czynnik_losowy(jednostki_NATO,teren_walk);
+        }
+    }
+}
+
+void CPotyczka::pobierz_wiadomosci(CJednostka *jednostka)
+{   qDebug()<<"pobierz_wiadomosci";
+    this->tekst+=jednostka->getMessage();
+    qDebug()<<"I";
+    jednostka->setMessage("");
+    qDebug()<<"II";
+    okno_potyczki->tekst=tekst;
+    qDebug()<<"III";
+    qDebug()<<"Pobierz wiadomości";
+}
+
+void CPotyczka::update_window()
+{
+    this->okno_potyczki->setJednostki_rys_ISIS(jednostki_ISIS);
+    this->okno_potyczki->setJednostki_rys_NATO(jednostki_NATO);
+    this->okno_potyczki->setPrzeszkody_rys(przeszkody_w_potyczce);
+    this->okno_potyczki->on_now();
+}
+
 void CPotyczka::update_jednostki_ISIS(CJednostka *jednostka)
 {
     jednostka->setWrogowie(jednostki_NATO);
@@ -209,28 +235,5 @@ void CPotyczka::update_jednostki_NATO (CJednostka *jednostka)
     pobierz_wiadomosci(jednostka);
 }
 
-void CPotyczka::pobierz_wiadomosci(CJednostka *jednostka)
-{   qDebug()<<"pobierz_wiadomosci";
-    this->tekst+=jednostka->getMessage();
-    qDebug()<<"I";
-    jednostka->setMessage("");
-    qDebug()<<"II";
-    okno_potyczki->tekst=tekst;
-    qDebug()<<"III";
-    qDebug()<<"Pobierz wiadomości";
-}
 
 
-void CPotyczka::pech()
-{   qDebug()<<"Pech";
-    if(!finished)
-    {if(licznik%3==1)
-        {
-       if(licznik%2==0)
-        czynnik_losowy->losuj_czynnik_losowy(jednostki_ISIS,teren_walk);
-
-       else
-        czynnik_losowy->losuj_czynnik_losowy(jednostki_NATO,teren_walk);
-        }
-    }
-}

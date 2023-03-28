@@ -2,8 +2,10 @@
 #define CARTYLERIA_H
 
 #include "cjednostka.h"
-#include <QObject>
-#include <QDebug>
+
+
+
+
 
 class CArtyleria : public CJednostka
 {
@@ -11,11 +13,11 @@ public:
     CArtyleria();
     ~CArtyleria();
     CArtyleria(QString strona_konfliktu);
-    //void atakuj();
-    //int ruch();
-    //int losowy_ruch();
+    void atakuj();
+    int ruch();
+    int losowy_ruch();
 private:
-  //  void zdarzenie(double wylosowano);
+    void zdarzenie(double wylosowano);
     int amunicja;
     void dostawa_amunicji();
     void wybuch_w_skladzie_amunicji();
@@ -25,5 +27,4 @@ private:
 
 
 };
-
 #endif // CARTYLERIA_H

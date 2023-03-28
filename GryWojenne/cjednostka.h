@@ -3,20 +3,22 @@
 
 #include <QString>
 #include <QDebug>
-
+#include <math.h>
+#include<cstdlib>
+#include<ctime>
 #include "cprzeszkoda.h"
+#include "cbron.h"
 
+
+class CBron;
 class CJednostka
 {
-
-
 public:
     CJednostka();
     virtual ~CJednostka();
-    //virtuint silal ~CJednostka();
     virtual void atakuj (){};
     virtual void zdarzenie(double wylosowano){};
-    virtual void odejmij_zycie(int ile){};
+    virtual void odejmij_zycie(int ile);
 
 
     void umrzyj();
@@ -46,7 +48,6 @@ public:
 
 
 protected:
-
     double licz_odleglosc(CJednostka* enemy);
     void znajdz_jednostke(std::vector<CJednostka*> jednostki_wroga);
     void przemiesc_sie();
@@ -57,9 +58,9 @@ protected:
     void strzal();
     bool mam_kogo_atakowac();
     bool in_range(CJednostka* jednostka_do_ataku);
-    virtual int punkty_ataku() {};
-    virtual int punkty_obrony() {} ;
+    virtual int punkty_ataku();
 
+    virtual int punkty_obrony() ;
 
 
     QString nazwa;
@@ -81,9 +82,11 @@ protected:
     std::vector<CJednostka*> swoi;
     std::vector<CJednostka*> w_zasiegu;
     std::vector<CPrzeszkoda*> przeszkody;
+    CBron* bron;
 
 
 
 };
+
 
 #endif // CJEDNOSTKA_H
