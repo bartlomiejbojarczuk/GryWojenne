@@ -7,7 +7,7 @@ CJednostka::CJednostka()
 CJednostka::~CJednostka(){
 qDebug()<<"Destruktor jednostka!";
 }
-//obliczenie odległości do podanej jednostki
+
 double CJednostka::licz_odleglosc(CJednostka* enemy)
 {
    qDebug()<<"CJednostka::licz_odleglosc";
@@ -35,7 +35,6 @@ if(enemy && this ){
 qDebug()<<"To nie tutaj";
 }
 
-//wyszukiwanie naibliższej jednosyki, którą można zaatakować
 void CJednostka::znajdz_jednostke(std::vector<CJednostka*> jednostki_wroga)
 {   int min=500;
    qDebug()<<"Szukam celu dla: "<<this->nazwa;
@@ -50,7 +49,6 @@ void CJednostka::znajdz_jednostke(std::vector<CJednostka*> jednostki_wroga)
 
 }
 
-//metoda zwraca false jeśli miejsce jest zajęte
 bool CJednostka::moge_zajac_miejsce(int x, int y){
 
 
@@ -82,7 +80,6 @@ bool CJednostka::moge_zajac_miejsce(int x, int y){
    return true;
 }
 
-//metoda aktualizująca położenie jednostek
 void CJednostka::przemiesc_sie()
 {   qDebug()<<"Przemieszczam się";
    int nPozycjaY, nPozycjaX;
@@ -146,7 +143,6 @@ qDebug()<<"USTALONO Y";
            qDebug()<<"przemiesc_sie - pusty this or pusta jednostka_do_ataku";
 }
 
-//losowanie liczb z podanego zakresu
 double CJednostka::losuj(int Od, int Do){
    srand(time(NULL));
    int zakres=Do-Od;
@@ -154,7 +150,6 @@ double CJednostka::losuj(int Od, int Do){
    return losowanie;
 }
 
-//uśmiercanie jednostki
 void CJednostka::umrzyj()
 {
    if(this->zycie<=0)
@@ -191,7 +186,6 @@ void CJednostka::strzal()
        qDebug()<<"Strzal pusty this";
 }
 
-//sprawdzenie, czy jest przypisana jednostka do ataku
 bool CJednostka::mam_kogo_atakowac()
 {
    if(jednostka_do_ataku!=NULL)
@@ -201,7 +195,6 @@ bool CJednostka::mam_kogo_atakowac()
 }
 
 
-//srawdzenie, czy dana jednostka jest w zasięgu jednostki
 bool CJednostka::in_range(CJednostka *jednostka_do_ataku)
 {   qDebug()<<"in range()";
    if(jednostka_do_ataku){
@@ -222,7 +215,6 @@ bool CJednostka::in_range(CJednostka *jednostka_do_ataku)
 
 
 
-//metody do pobierania wartości i ustawienia pól
 QString CJednostka::getNazwa()
 {
    return this->nazwa;
@@ -289,7 +281,6 @@ bool CJednostka::getDeath()
 }
 
 
-//sprawdzenie, kto jest w podanym zasięgu
 void CJednostka::kto_w_zasiegu(int zas)
 {
    for(int i=0;i<swoi.size();i++)

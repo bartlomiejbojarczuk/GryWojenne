@@ -25,7 +25,6 @@ void battlewindow::on_pushButton_clicked()
     exit (1);
 }
 
-//odświeżenie widoku
 void battlewindow::on_now(){
 
     ui->textBrowser->setText(tekst);
@@ -39,7 +38,6 @@ void battlewindow::on_now(){
 
 }
 
-//Metoda pozwala na narysowanie planszy, na której rozgrywa się potyczka
 void battlewindow::rysuj_plansze()
 {
     QPen redPen (Qt::red);
@@ -52,7 +50,6 @@ void battlewindow::rysuj_plansze()
 }
 
 
-//Metoda rysująca flagi
 void battlewindow::rysuj_flagi()
 {
     ui->label->setScaledContents(true);
@@ -115,7 +112,6 @@ if(jednostki_do_narysowania.size()){
 
     }}
 
-//Metoda pozwalająca na rysowanie przeszkód wynikających z terenu
 void battlewindow::rysuj_przeszkody(std::vector<CPrzeszkoda*> przeszkody_do_narysowania)
 {
 
