@@ -6,7 +6,7 @@ CBron::CBron()
 
 }
 
-bool CBron::czy_zastzele(QString kto, QString do_kogo)
+bool CBron::czy_zastrzele(QString kto, QString do_kogo)
 {
 
     if(kto=="Żołnierz")
@@ -29,7 +29,7 @@ bool CBron::czy_zastzele(QString kto, QString do_kogo)
 
 void CBron::strzel(QString kto, QString do_kogo)
 {
-    if(czy_zastzele(kto,do_kogo))
+    if(czy_zastrzele(kto,do_kogo))
     {
         if(do_kogo=="Żołnierz")
             pocisk=new CZwykly;

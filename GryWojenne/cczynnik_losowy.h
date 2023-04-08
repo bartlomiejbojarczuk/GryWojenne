@@ -9,11 +9,25 @@
 class CCzynnik_losowy
 {
 public:
+
+    //! Konstruktor klasy CCzynnik_losowy
+    /*!
+     */
     CCzynnik_losowy();
-    void losuj_czynnik_pogodowy();
+
+    //! Destruktor klasy CCzynnik_losowy
+    /*!
+     */
+    ~CCzynnik_losowy();
+
+
+    //! Metoda odpwiedzialna za wygenerowanie czynnika losowego w rozgrywce
+    /*!
+     * \param jednostki parametr przechowujący wskaźnik do vectora obiektów klasy CJednostka
+     * \param teren parametr przechowujący wskaźnik do terenu rozgrywki
+     */
     void losuj_czynnik_losowy(std::vector<CJednostka*> &jednostki, CTeren * teren);
-protected:
-    int numer;
+
 
 };
 

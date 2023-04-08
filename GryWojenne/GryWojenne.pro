@@ -13,7 +13,6 @@ CONFIG += c++11
 SOURCES += \
     battlewindow.cpp \
     cartyleria.cpp \
-    cbomba.cpp \
     cbron.cpp \
     cczolg.cpp \
     cczynnik_losowy.cpp \
@@ -35,7 +34,6 @@ SOURCES += \
 HEADERS += \
     battlewindow.h \
     cartyleria.h \
-    cbomba.h \
     cbron.h \
     cczolg.h \
     cczynnik_losowy.h \

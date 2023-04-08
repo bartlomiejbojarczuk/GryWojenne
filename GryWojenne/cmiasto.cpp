@@ -17,6 +17,7 @@ void CMiasto::tworz_wiezowiec()
 
 
         przeszkody.push_back(new CPrzeszkoda("wiezowiec",abs(x2-x1),abs(y2-y1),(x2+x1)/2,(y1+y2)/2));
+        this->wybudowano=1;
 
 
 }
