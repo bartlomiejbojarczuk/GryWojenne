@@ -3,6 +3,12 @@
 
 #include "cteren.h"
 
+//!
+/*!
+ * \class CMiasto
+ * \brief reprezentuje teren w postaci Miasta, na którym rozgrywana jest potyczka
+ *  Klasa pochodna po klasie CTeren, która reprezentuje Teren typu Miasto, metoda implementuje wirtualne metody klasy CTeren wykorzystując wartości charakterystyczne dla tego typu terenu.
+ */
 class CMiasto : public CTeren
 {
 public:

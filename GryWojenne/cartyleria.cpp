@@ -21,7 +21,7 @@ CArtyleria::CArtyleria(QString strona_konfliktu)
     this->nazwa="Armata";
     this->sila_ataku=500;
     this->wytrzymalosc=100;
-    this->zasieg=200;
+    this->zasieg=400;
     this->zycie=500;
     this->PozycjaX=50;
     this->PozycjaY=50;

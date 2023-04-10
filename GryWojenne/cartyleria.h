@@ -6,7 +6,12 @@
 
 
 
-
+//!
+/*!
+ *  \class CArtyleria
+ *  \brief Klasa CArtyleria reprezentuje jednostkę typu CArtyleria
+ *  Klasa implementuje metody i parametry charakterystyczne dla jednostki typu artyleri
+ */
 class CArtyleria : public CJednostka
 {
 public:

@@ -18,9 +18,10 @@ namespace Ui {
 class battlewindow;
 }
 
-//! Klasa battlewindow - odpowiadająca za wyświetlanie przebiegu potyczki
+//! \class battlewindow
+//! \brief Klasa battlewindow - odpowiadająca za wyświetlanie przebiegu potyczki
 /*!
-  \class Klasa odpowiada za rysowanie elementów graficznych odzwierciedlających przebieg potyczki (jednostek, przeszkód) oraz elementów stałych okna potyczki (flagi, siatka).
+ * Klasa odpowiada za rysowanie elementów graficznych odzwierciedlających przebieg potyczki (jednostek, przeszkód) oraz elementów stałych okna potyczki (flagi, siatka).
  */
 class battlewindow : public QDialog
 {

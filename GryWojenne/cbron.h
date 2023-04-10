@@ -6,6 +6,12 @@
 #include "cprzeciwlotniczy.h"
 #include "cprzeciwpancerny.h"
 
+//!
+/*!
+ * \class CBron
+ * \brief Klasa CBron opisuje bron wykorzystywaną przez jednostki w trakcie potyczki
+ * Klasa implementuje metody i parametry związane z bronią wykorzystywaną przez jednostki w trakcie potyczki
+ */
 class CBron
 {
 public:

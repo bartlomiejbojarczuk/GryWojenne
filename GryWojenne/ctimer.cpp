@@ -62,7 +62,7 @@ void CTimer::Start()
     startedAt = clock();
     qDebug()<<"Timer START";
 }
-void CTimer::Reset() /** metoda odpowiadająca za reset timera */
+void CTimer::Reset()
 {
     paused = false;
     startedAt = clock();

@@ -4,6 +4,13 @@
 #include "cjednostka.h"
 #include <QDebug>
 
+
+//!
+/*!
+ * \class CCzolg
+ * \brief Klasa CCzolg reprezentuje jednostkę typu CCzolg
+ * Klasa implementuje metody i parametry charakterystyczne dla jednostki typu czołg
+ */
 class CCzolg : public CJednostka
 {
 public:

@@ -6,6 +6,12 @@
 #include "cjednostka.h"
 #include "cteren.h"
 
+//!
+/*!
+ * \class CCzynnik_losowy
+ * \brief Opisuje zdarzenia losowe, które mogą się pojawić w trakcie trwania potyczki
+ * Klasa implementuje metody i parametry związane ze zdarzeniami losowymi, które mogą się pojawić w trakcie trwania potyczki
+ */
 class CCzynnik_losowy
 {
 public:

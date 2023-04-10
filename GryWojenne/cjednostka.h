@@ -12,9 +12,11 @@
 
 class CBron;
 
-//! Klasa CJednostka
+//!
 /*!
- \class CJednostka klasa abstrakcyjna, po której dziedziczą poszczególne typy jednostek, definiuje metody wirtualne, które zostaną przysłonięte w implementacji klas pochodnych oraz parametry i metody wspólne dla wszystkich typów jednostek.
+ * \class CJednostka
+ * \brief Klasa abstrakcyjna, po której dziedziczą poszczególne typy jednostek,
+ * Klasa definiuje metody wirtualne, które zostaną przysłonięte w implementacji klas pochodnych oraz parametry i metody wspólne dla wszystkich typów jednostek.
  klasa abstrakcyjna, po której dziedziczą poszczególne typy jednostek, definiuje metody wirtualne, które zostaną przysłonięte w implementacji klas pochodnych oraz parametry i metody wspólne dla wszystkich typów jednostek.
 */
 class CJednostka

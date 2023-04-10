@@ -33,7 +33,7 @@ void CPiechota::zdarzenie(double wylosowano)
         choroba();
     else
         if (zdrowy && wylosowano>7)
-        zachoruj();
+        otruj();
 }
 
 void CPiechota::atakuj(){
@@ -114,7 +114,7 @@ void CPiechota::choroba()
     this->message+=this->nazwa+" "+this->frakcja+" zaraził się dyzenterią \n";
 }
 
-void CPiechota::zachoruj()
+void CPiechota::otruj()
 {
     this->zdrowy=0;
     this->message+=this->nazwa+" "+this->frakcja+" został otruty \n";
