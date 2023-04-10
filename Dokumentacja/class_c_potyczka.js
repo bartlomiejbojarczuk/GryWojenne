@@ -1,0 +1,27 @@
+var class_c_potyczka =
+[
+    [ "CPotyczka", "class_c_potyczka.html#abd2ebe37046dd8c9cebc8a316cc8c5a4", null ],
+    [ "~CPotyczka", "class_c_potyczka.html#a03370ba9e2b5404b99e373535a0fdf15", null ],
+    [ "getJednostki_ISIS", "class_c_potyczka.html#a474afba16cd3a3c2a50aa653afdce6da", null ],
+    [ "getJednostki_NATO", "class_c_potyczka.html#a1ae09f34ed7b099261af590b83204e57", null ],
+    [ "pech", "class_c_potyczka.html#a39f3f07cf24269a5cbb1bed399b21452", null ],
+    [ "pobierz_wiadomosci", "class_c_potyczka.html#aa79cf52ebecc01c18d1c3ceb0aeb87a5", null ],
+    [ "result", "class_c_potyczka.html#a03dc4b2ab25d4ed4281a6f36fa7bd748", null ],
+    [ "rozmiesc_jednostki", "class_c_potyczka.html#a1e51d3970f25db84e9cb4413a077d271", null ],
+    [ "sprawdz_kto_polegl", "class_c_potyczka.html#a88d01c1ea0caba41dbdbb804dd827888", null ],
+    [ "tworz_oddzial", "class_c_potyczka.html#ac3b75f7fa074001cceeb8cd647c56b8f", null ],
+    [ "update", "class_c_potyczka.html#ad0278a7f99b9df9f183ce65c9572cadd", null ],
+    [ "update_jednostki_ISIS", "class_c_potyczka.html#ac09e20f288d5b7c890292415001af764", null ],
+    [ "update_jednostki_NATO", "class_c_potyczka.html#a6f7c6392d185a95829d48a588bc8a31b", null ],
+    [ "update_window", "class_c_potyczka.html#a63f89c6f69b2c4a17f5d152bd618cf77", null ],
+    [ "czynnik_losowy", "class_c_potyczka.html#a0f6165261248f63f78232990656e611c", null ],
+    [ "finished", "class_c_potyczka.html#a098e7cd49b1543583bb02affac3ff5b9", null ],
+    [ "jednostki_ISIS", "class_c_potyczka.html#a370b042336c38fb2d645eae560c53f5c", null ],
+    [ "jednostki_NATO", "class_c_potyczka.html#aab1ac8296aef97f7b58a1d73e1e2613e", null ],
+    [ "licznik", "class_c_potyczka.html#a3eb34a05b337b3eb6e4c6f4ccf140ffd", null ],
+    [ "okno_potyczki", "class_c_potyczka.html#a6fc2c13dac0bfb7cc9df334e47627c4c", null ],
+    [ "przeszkody_w_potyczce", "class_c_potyczka.html#ae97413834f71c88a64aaf2daaeeefd93", null ],
+    [ "tekst", "class_c_potyczka.html#a5bfe783288289761efb7d96b6f1e66a0", null ],
+    [ "teren_walk", "class_c_potyczka.html#aa40c1338a01dfe6ed2ed5d975c796865", null ],
+    [ "timer", "class_c_potyczka.html#a5b3c15018706b9f2347c4955848b9f06", null ]
+];

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['pancerz_0',['pancerz',['../class_c_jednostka.html#a0038662994ec642ea202d11a9831407f',1,'CJednostka']]],
+  ['panika_1',['panika',['../class_c_piechota.html#ab85682d0202baf95c2999b461dc07fc5',1,'CPiechota']]],
+  ['pause_2',['Pause',['../class_c_timer.html#ab1bcf237fecdaea8e4a5120f65a086d6',1,'CTimer']]],
+  ['paused_3',['paused',['../class_c_timer.html#ae81ef188d7802d4f2417bbd273dc0687',1,'CTimer']]],
+  ['pausedat_4',['pausedAt',['../class_c_timer.html#a2fb19d4be73a19b38bdcba1c3f2fc2d3',1,'CTimer']]],
+  ['pech_5',['pech',['../class_c_potyczka.html#a39f3f07cf24269a5cbb1bed399b21452',1,'CPotyczka']]],
+  ['pobierz_5fwiadomosci_6',['pobierz_wiadomosci',['../class_c_potyczka.html#aa79cf52ebecc01c18d1c3ceb0aeb87a5',1,'CPotyczka']]],
+  ['pocisk_7',['pocisk',['../class_c_bron.html#a22ab2c7d17a769f96c8df2b96305a066',1,'CBron']]],
+  ['posx_8',['Posx',['../class_c_przeszkoda.html#a15a2a220583d3e8c4a13a440d6459a7d',1,'CPrzeszkoda']]],
+  ['posy_9',['Posy',['../class_c_przeszkoda.html#aab16c5a87f486c75d2bf9ef4bddf24a1',1,'CPrzeszkoda']]],
+  ['pozycjax_10',['PozycjaX',['../class_c_jednostka.html#a48ea2f4848c146eca4637b7a52cb348b',1,'CJednostka']]],
+  ['pozycjay_11',['PozycjaY',['../class_c_jednostka.html#a34d3ff920e1669e984b1cc0bbc3e8317',1,'CJednostka']]],
+  ['przemiesc_5fsie_12',['przemiesc_sie',['../class_c_jednostka.html#a0055e72b0de2948302a41a047033ced3',1,'CJednostka']]],
+  ['przeszkody_13',['przeszkody',['../class_c_jednostka.html#a951922c2d0fb8e5e1af166eb3c3ba08c',1,'CJednostka::przeszkody()'],['../class_c_teren.html#a78adffce1aa5154637b3c8e178eb37ea',1,'CTeren::przeszkody()']]],
+  ['przeszkody_5frys_14',['przeszkody_rys',['../classbattlewindow.html#ac7da9d6f080fe678069b063f1cadd773',1,'battlewindow']]],
+  ['przeszkody_5fw_5fpotyczce_15',['przeszkody_w_potyczce',['../class_c_potyczka.html#ae97413834f71c88a64aaf2daaeeefd93',1,'CPotyczka']]],
+  ['przeszkodz_16',['przeszkodz',['../class_c_miasto.html#ad85b9e14eeac1d9c88fd140743ce8fd9',1,'CMiasto::przeszkodz()'],['../class_c_pustynia.html#a0711999217b73796cce86be1c206a05e',1,'CPustynia::przeszkodz()'],['../class_c_teren.html#af79b2430295cccfba5c67e0c2a43b659',1,'CTeren::przeszkodz()']]],
+  ['punkty_5fataku_17',['punkty_ataku',['../class_c_jednostka.html#aa4e52389f797f771db14bc63838fa57e',1,'CJednostka']]],
+  ['punkty_5fobrony_18',['punkty_obrony',['../class_c_jednostka.html#a8a2d4c923b24d408f909751bb2a7a4f0',1,'CJednostka']]]
+];

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['setfrakcja_0',['setFrakcja',['../class_c_jednostka.html#add260f793214c708231edc1578cadcc0',1,'CJednostka']]],
+  ['setjednostki_5frys_5fisis_1',['setJednostki_rys_ISIS',['../classbattlewindow.html#a7e39e4518db441523e4705c273cfe681',1,'battlewindow']]],
+  ['setjednostki_5frys_5fnato_2',['setJednostki_rys_NATO',['../classbattlewindow.html#a1b240b79b0dc6b1c3b8fb7cb0133cdd4',1,'battlewindow']]],
+  ['setmessage_3',['setMessage',['../class_c_jednostka.html#ab65b0acb5df22d6ca028391b6916d081',1,'CJednostka']]],
+  ['setpozycjax_4',['setPozycjaX',['../class_c_jednostka.html#a59275d290b354feb7ecbba9285a49d49',1,'CJednostka']]],
+  ['setpozycjay_5',['setPozycjaY',['../class_c_jednostka.html#a46aaf78b6a12e91d7e5c0927fdfe7347',1,'CJednostka']]],
+  ['setprzeszkody_6',['setPrzeszkody',['../class_c_jednostka.html#a4a6b16f9c0593eccb94f91b9d28b5608',1,'CJednostka']]],
+  ['setprzeszkody_5frys_7',['setPrzeszkody_rys',['../classbattlewindow.html#ac5d5c343efd3cdb2458ba9ff692d5729',1,'battlewindow']]],
+  ['setswoi_8',['setSwoi',['../class_c_jednostka.html#afaa9ba9b63cd4ea9f2f59f83d74a398f',1,'CJednostka']]],
+  ['setwrogowie_9',['setWrogowie',['../class_c_jednostka.html#abccf67b859b8ad949f19852ec82db0f7',1,'CJednostka']]],
+  ['sprawdz_10',['sprawdz',['../class_main_window.html#a7fbac9afa3a828d57c2a03187b8ac752',1,'MainWindow']]],
+  ['sprawdz_5fkto_5fpolegl_11',['sprawdz_kto_polegl',['../class_c_potyczka.html#a88d01c1ea0caba41dbdbb804dd827888',1,'CPotyczka']]],
+  ['start_12',['Start',['../class_c_timer.html#a4c95a1f25b3ef73436d4876260a2e013',1,'CTimer']]],
+  ['stop_13',['Stop',['../class_c_timer.html#a7fe9ad152f641589251afdabebd60572',1,'CTimer']]],
+  ['strzal_14',['strzal',['../class_c_jednostka.html#a8dfe83b56c00b3d0372f955ca313ce7f',1,'CJednostka']]],
+  ['strzel_15',['strzel',['../class_c_bron.html#a7e5419d0253a2529cdb27ecb356a2104',1,'CBron']]]
+];
